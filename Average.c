@@ -1,21 +1,39 @@
-#include<stdio.h>
+#include <stdio.h>
+
+#define MIN 0
+#define MAX 99
 
 void main()
 {
-  int n1,n2,n3,a;
+  int n,a,whilecounter=0,total=3,sumcounter=0;
 
-do
+
+
+while(whilecounter<total)
 {
-  printf("Enter three numbers");
+  printf("Enter a number(%d-%d) :",MIN,MAX);
+  scanf("%d",&n);
+  if (n >= MIN && n <= MAX)
+  {
+      printf("Good\n");
+      sumcounter=sumcounter+n;
+      whilecounter++;
+      //whilecounter=whilecounter+1;
+  }
 
-}
-while(scanf("%d %d %d")!=3);
-a=n1+n2+n3/3;
+  else
+  {
+      printf("Damn you!\n");
+      break;
 
-printf("Average is %d",&a);
-
-getch();
-
+  }
 
 
+
+
+
+  }
+  a=(sumcounter)/total;
+
+  printf("Average is %d",a);
 }

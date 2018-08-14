@@ -11,7 +11,7 @@ void main()
 
 while(whilecounter<total)
 {
-  printf("Enter a number(%d-%d) :",MIN,MAX);
+  printf("Enter numbers(%d-%d) :",MIN,MAX);
   scanf("%d",&n);
   if (n >= MIN && n <= MAX)
   {

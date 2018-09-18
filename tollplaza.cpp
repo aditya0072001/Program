@@ -1,32 +1,32 @@
-#define toll=10.50
+#include<iostream>
+using namespace std;
+
+#define Toll=10.50
 #define ESC=27
 
 class tollplaza
 {
 private:
-  int  totalvehicle;
-  int  totalcash;
+  int  totalcar;
+  double  totalcash;
 
-public: 
-  tollplaza()
+public: tollplaza()
   {
-    totalvehicle=0;
-    
-  }
-  void  totalvehicle(int 0);
-  void  totalcash(double 0.0);
+    totalcar=0;
+    totalcash=0.0;
 
+  }
 void payingcar()
  {
-    totalcash=totalcash+toll;
+    totalcash=totalcash+Toll;
     totalcar=totalcar+1;
   }
 
-public: nonpayingcar()
+void nonpayingcar()
 {
   totalcar++;
 }
-public: printcardetail()
+void printcardetail()
 {
   cout<<"totalcash";
   cout<<"totalcar";
@@ -51,7 +51,7 @@ int main()
       plaza1.printcardetail();
     }
   } while(ch!=ESC);
-  plaza.printcardetail();
+  plaza1.printcardetail();
 
   return 0;
 }

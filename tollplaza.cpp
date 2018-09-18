@@ -7,11 +7,16 @@ private:
   int  totalvehicle;
   int  totalcash;
 
-public: tollplaza()
+public: 
+  tollplaza()
+  {
+    totalvehicle=0;
+    
+  }
   void  totalvehicle(int 0);
   void  totalcash(double 0.0);
 
-public: payingcar()
+void payingcar()
  {
     totalcash=totalcash+toll;
     totalcar=totalcar+1;
@@ -27,7 +32,7 @@ public: printcardetail()
   cout<<"totalcar";
 }
 
-}
+};
 
 int main()
 {
